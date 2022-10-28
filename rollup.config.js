@@ -16,11 +16,6 @@ export default [
         format: "es",
         export: "named",
       },
-      {
-        file: "dist/index.mjs.js",
-        format: "mjs",
-        export: "named",
-      },
     ],
     plugins: [
       postcss({
