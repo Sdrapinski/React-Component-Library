@@ -1,1 +1,1 @@
-export * from "./Requirements";
+export { Requirements } from "./Requirements";

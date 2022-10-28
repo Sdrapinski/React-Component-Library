@@ -1,6 +1,11 @@
 import PropTypes from "prop-types";
 
-function Button({ label, backgroundColor = "red", size = "md", handleClick }) {
+export function Button({
+  label,
+  backgroundColor = "red",
+  size = "md",
+  handleClick,
+}) {
   let scale = 1;
   if (size === "sm") scale = 0.75;
   if (size === "lg") scale = 1.5;
@@ -22,5 +27,3 @@ Button.propTypes = {
   size: PropTypes.oneOf(["sm", "md", "lg"]),
   handleClick: PropTypes.func,
 };
-
-export default Button;
